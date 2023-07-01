@@ -33,14 +33,11 @@ export class AppComponent {
   }
 
   submit() {
-    let i = 0;
     this.opened = [];
     if (this.search_query.length) {
       this.users = data.data.filter((f) => {
         const pattern = new RegExp(`${this.search_query}`, 'gmi');
-        const res = pattern.test(f.name) || pattern.test(f.email);
-        console.log(res, pattern, this.search_query)
-        return res;
+        return pattern.test(f.name) || pattern.test(f.email);
       });
     } else this.users = data.data;
     this.users = this.users.map((d, id) => {

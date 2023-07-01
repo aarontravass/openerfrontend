@@ -5,6 +5,7 @@
 
 tr:hover{
   background-color: lightgray;
+  cursor:pointer;
 }
 
 .card {
