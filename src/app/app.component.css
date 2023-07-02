@@ -3,6 +3,10 @@
   border-collapse: collapse;
 }
 
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
 tr:hover{
   background-color: lightgray;
   cursor:pointer;
@@ -49,9 +53,6 @@ th, td {
 
 
 
-tr:nth-child(even) {
-  background-color: #f2f2f2
-}
 
 .table-head{
   background-color: grey;
@@ -64,7 +65,7 @@ input[type=text] {
   border: none;
   background: #f1f1f1;
   float: left;
-  width: 60%;
+  width: 55%;
 }
 
 .btn-class {
